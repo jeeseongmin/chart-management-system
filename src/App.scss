@@ -1,7 +1,47 @@
-$headerHeight : 50px;
+$pv: 16px;
 
-$red : red;
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+  //overflow: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  border: 1px solid red;
+}
+
 header {
-  background-color : $red;
-  height : $headerHeight;
+  background-color: yellow;
+  border: 1px solid red;
+  height: 48px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contentLayout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+#contents {
+  padding: $pv;
+  overflow-y: scroll;
+}
+
+#menubar {
+  border: 1px solid blue;
+  width: 12rem;
+  padding: $pv;
 }
