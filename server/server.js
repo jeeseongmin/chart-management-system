@@ -4,7 +4,6 @@ const path = require("path");
 const app = express();
 require('dotenv').config();
 const mongoose = require("mongoose");
-console.log(process.env.DB_PASSWORD)
 
 const uri = `mongodb+srv://admin:${process.env.DB_PASSWORD}@system.pw6r10d.mongodb.net/?retryWrites=true&w=majority`
 mongoose.connect(uri)
