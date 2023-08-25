@@ -1,11 +1,15 @@
 import React from 'react';
-import Menubar from "./Menubar";
 import Contents from "./Contents";
+import Sidebar from "./Sidebar";
+import { useSelector } from "react-redux";
 
 const ContentLayout = ({children}) => {
+  
+  const sidebar = useSelector((state) => state.setting.sidebar);
+  
   return (
     <div id={"contentLayout"}>
-      <Menubar/>
+      <Sidebar/>
       <Contents/>
     </div>
   );

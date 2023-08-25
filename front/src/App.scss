@@ -1,8 +1,18 @@
 $pv: 16px;
+$gray: #a3a3a3;
+
+
+@font-face {
+  font-family: 'KBO-Dia-Gothic_bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
 html, body {
   height: 100%;
   scroll-behavior: smooth;
+  font-family: 'KBO-Dia-Gothic_bold'
   //overflow: hidden;
 }
 
@@ -12,23 +22,43 @@ html, body {
 
 .App {
   height: 100%;
-  border: 1px solid red;
+}
+
+#iconButton {
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  //align-items: center;
+  //justify-content: center;
 }
 
 header {
-  background-color: yellow;
-  border: 1px solid red;
-  height: 48px;
-  padding: 0 48px;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  border-bottom: 2px solid #e3e3e3;
+  height: 60px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
 #contentLayout {
   display: flex;
   flex-direction: row;
   flex: 1;
+  padding-top: 60px;
 }
 
 #contents {
@@ -36,8 +66,37 @@ header {
   overflow-y: scroll;
 }
 
-#menubar {
-  border: 1px solid blue;
-  width: 12rem;
-  padding: $pv;
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #35393f;
+  //padding: $pv;
+  overflow: hidden;
+
+  transition: 0.3s all ease-out;
+}
+
+.sidebarOpen {
+  width: 18rem;
+}
+
+.sidebarClose {
+  width: 0rem;
+}
+
+#sidebar > #header {
+  width: 18rem;
+  height: 60px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  background-color: #35393f;
+  gap: 8px;
+  color: white;
+}
+
+#sidebar > #content {
+
 }
