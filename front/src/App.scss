@@ -38,10 +38,12 @@ html, body {
 header {
   width: 100%;
   position: fixed;
+  left: 0;
   background-color: white;
   border-bottom: 2px solid #e3e3e3;
   height: 60px;
-  padding: 0 16px;
+  //padding: 0 16px;
+  //padding-left: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,6 +54,7 @@ header > div {
   flex-direction: row;
   align-items: center;
   gap: 8px;
+  margin: 0 16px;
 }
 
 #contentLayout {
