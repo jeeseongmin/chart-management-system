@@ -16,7 +16,15 @@ const Sidebar = () => {
         <div><b><span style={{color: "white"}}>CHART</span> <span style={{color: "#a3a3a3"}}>SYSTEM</span></b></div>
       </div>
       <div id={"content"}>
-        <div id={"top"}></div>
+        <div>
+          <div>
+            <div className={"font-gray"}>
+              Chart
+            </div>
+            <div>하하</div>
+          </div>
+        
+        </div>
         <div id={""}></div>
       </div>
     </div>

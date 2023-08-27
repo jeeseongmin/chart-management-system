@@ -98,8 +98,14 @@ header > div {
   background-color: #35393f;
   gap: 8px;
   color: white;
+  border-bottom: 1px solid gray;
 }
 
 #sidebar > #content {
+  padding: 16px;
+  width: auto;
+}
 
+.font-gray {
+  color: #a3a3a3
 }
