@@ -109,3 +109,38 @@ header > div {
 .font-gray {
   color: #a3a3a3
 }
+
+#spaceTitle {
+  color: #e3e3e3;
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+#space {
+  width: 14.5rem;
+  display: flex;
+  items-align: center;
+
+  gap: 16px;
+  padding: 12px;
+  color: #a3a3a3;
+  font-size: 14px;
+}
+
+
+#spaceSmallTitle {
+  color: gray;
+  font-size: 12px;
+  padding: 12px 0;
+  width: 5rem;
+}
+
+#spaceListButton {
+  width: 16rem;
+  padding: 10px 0;
+  color: #a3a3a3;
+  background-color: #3f3f3f;
+  border: 1px solid transparent;
+  cursor: pointer;
+  margin: 12px 0;
+}
