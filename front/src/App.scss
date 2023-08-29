@@ -1,5 +1,7 @@
 $pv: 16px;
 $gray: #a3a3a3;
+$contentXPadding: 100px;
+$contentYPadding: 40px;
 
 
 @font-face {
@@ -59,14 +61,15 @@ header > div {
 
 #contentLayout {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex: 1;
-  padding-top: 60px;
+  padding-top: 240px;
 }
 
 #contents {
-  padding: $pv;
+  //padding: $pv;
   overflow-y: scroll;
+  padding: $contentYPadding $contentXPadding;
 }
 
 #sidebar {
@@ -143,4 +146,20 @@ header > div {
   border: 1px solid transparent;
   cursor: pointer;
   margin: 12px 0;
+}
+
+#workspaceHeader {
+  top: 60px;
+  height: 140px;
+  width: 100%;
+  border: 1px solid #d7d9de;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
+  position: fixed;
+  background-color: white;
+  padding: 20px $contentXPadding;
+}
+
+#workspaceHeader > div {
+  display: flex;
+  flexDirection: column;
 }
