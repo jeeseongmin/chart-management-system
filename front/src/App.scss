@@ -80,6 +80,7 @@ header > div {
   background-color: #35393f;
   //padding: $pv;
   overflow: hidden;
+  z-index: 1000;
 
   transition: 0.3s all ease-out;
 }
@@ -150,13 +151,14 @@ header > div {
 
 #workspaceHeader {
   top: 60px;
+  left: 0;
   height: 140px;
   width: 100%;
   border: 1px solid #d7d9de;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
   position: fixed;
   background-color: white;
-  padding: 20px $contentXPadding;
+  //padding: 20px $contentXPadding;
 }
 
 #workspaceHeader > div {
