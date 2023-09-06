@@ -158,6 +158,11 @@ header > div {
   box-shadow: 0 1px 3px rgba(0, 0, 0, .15);
   position: fixed;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
   //padding: 20px $contentXPadding;
 }
 
