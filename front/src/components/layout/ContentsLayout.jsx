@@ -42,6 +42,35 @@ const ContentLayout = ({children}) => {
             </button>
           </div>
         </div>
+        <div style={{
+          width: "80%",
+          height: "3rem",
+          minWidth: "60rem",
+          display: "flex",
+          alignItems: "center",
+          gap: "16px",
+          border: "1px solid red",
+          justifyContent: "space-between"
+        }}>
+          <div>
+            <button style={{
+              padding: "4px 12px",
+              fontWeight: "bold",
+              backgroundColor: "transparent",
+              border: "1px solid transparent",
+              cursor: "pointer",
+            }}>haha
+            </button>
+            <button style={{
+              padding: "4px 12px",
+              fontWeight: "bold",
+              backgroundColor: "transparent",
+              border: "1px solid transparent",
+              cursor: "pointer",
+            }}>hoho
+            </button>
+          </div>
+        </div>
       
       </div>
       <Contents/>
