@@ -70,6 +70,7 @@ const ContentLayout = ({children}) => {
             }}>hoho
             </button>
           </div>
+          <div>test</div>
         </div>
       
       </div>
